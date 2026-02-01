@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Representations for Neural Decoding - ICML 2026 Workshop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <h1 class="logo">Data Representations for Neural Decoding</h1>
+                <ul class="nav-links">
+                    <li><a href="#schedule">Schedule</a></li>
+                    <li><a href="#speakers">Speakers</a></li>
+                    <li><a href="#organizers">Organizers</a></li>
+                    <li><a href="#cfp">Call for Papers</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>ICML 2026 WORKSHOP</h1>
+                <h2>Data Representations for Neural Decoding</h2>
+                <p class="date-location">Date: TBA<br>Location: TBA</p>
+            </div>
+        </section>
+
+        <section class="intro-section">
+            <div class="container">
+                <p>
+                    Brain-computer interfaces (BCIs) are advancing rapidly: invasive methods demonstrate strong
+                    performance using established representations, while non-invasive approaches (EEG/MEG) are
+                    maturing to systematic benchmarks. Yet non-invasive BCIs lack consensus on optimal
+                    input representations—a critical bottleneck as the field moves from feasibility to optimization.
+                </p>
+                <p>
+                    Unlike mature domains like automatic speech recognition (which has converged on mel spectrograms), 
+                    BCIs lack consensus on input representations. Many neuroscience studies still default
+                    to raw or minimally-processed signals, despite brain data being inherently high-dimensional,
+                    noisy, and sparse.
+                </p>
+                <p>
+                    Hence, this workshop addresses an important question: <strong>What does neural feature engineering
+                    look like for BCIs in the age of representation learning and foundation models?</strong> To answer this
+                    question, we unite ML researchers and neuroscientists to benchmark representations across
+                    modalities (EEG, MEG, ECoG, microelectrode arrays), examine how to effectively integrate
+                    learned and engineered features, and establish best practices for the field. This directly aligns
+                    with ICML's focus on representation learning: tackling how to represent brain signals for
+                    downstream ML tasks, parallel to how the field developed optimal representations for vision
+                    and language.
+                </p>
+            </div>
+        </section>
+
+        <section id="schedule" class="section">
+            <div class="container">
+                <h2>Tentative Schedule</h2>
+                <p><strong>Date:</strong> TBA</p>
+                <p><strong>Location:</strong> TBA</p>
+                <p><strong>Room Capacity:</strong> TBA</p>
+                
+                <div class="schedule-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Time</th>
+                                <th>Event</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>9:00–9:10</td>
+                                <td>Opening Remarks<br><em>BCI landscape and representation challenges</em></td>
+                            </tr>
+                            <tr>
+                                <td>9:10–10:00</td>
+                                <td>Invited Talk: Mirco Ravanelli (Concordia University/Mila)<br><em>Raw vs. spectral features for speech—lessons on data efficiency</em></td>
+                            </tr>
+                            <tr>
+                                <td>10:00–10:50</td>
+                                <td>Invited Talk: Alexandre Gramfort (Meta Reality Labs)<br><em>Cross-spectral (Riemannian) features from Meta's EMG neural band</em></td>
+                            </tr>
+                            <tr>
+                                <td>10:50–11:10</td>
+                                <td>Break & Networking</td>
+                            </tr>
+                            <tr>
+                                <td>11:10–12:00</td>
+                                <td>Invited Talk: Natalie Voets (University of Oxford)<br><em>Neuroanatomical priors for speech decoding</em></td>
+                            </tr>
+                            <tr>
+                                <td>12:00–12:30</td>
+                                <td>Spotlight Session 1<br><em>3 papers × 10 minutes (engineered features theme)</em></td>
+                            </tr>
+                            <tr>
+                                <td>12:30–13:00</td>
+                                <td>Morning Panel Q&A<br><em>Ravanelli, Gramfort, Voets + spotlight presenters</em></td>
+                            </tr>
+                            <tr>
+                                <td>13:00–14:00</td>
+                                <td>Lunch + Poster Session<br><em>20-25 posters (remain up all day for viewing during breaks)</em></td>
+                            </tr>
+                            <tr>
+                                <td>14:00–14:50</td>
+                                <td>Invited Talk: [TBA]<br><em>Foundation models for neural decoding</em></td>
+                            </tr>
+                            <tr>
+                                <td>14:50–15:40</td>
+                                <td>Invited Talk: [TBA]<br><em>Contrastive learning for BCIs</em></td>
+                            </tr>
+                            <tr>
+                                <td>15:40–16:00</td>
+                                <td>Break & Networking</td>
+                            </tr>
+                            <tr>
+                                <td>16:00–16:30</td>
+                                <td>Spotlight Session 2<br><em>3 papers × 10 minutes (learned representations theme)</em></td>
+                            </tr>
+                            <tr>
+                                <td>16:30–17:15</td>
+                                <td>Panel Discussion<br><em>All speakers + spotlight presenters on representation challenges and future directions</em></td>
+                            </tr>
+                            <tr>
+                                <td>17:15+</td>
+                                <td>Workshop social</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="speakers" class="section">
+            <div class="container">
+                <h2>Speakers</h2>
+                <div class="people-grid">
+                    <div class="person">
+                        <div class="person-photo"></div>
+                        <h3>Mirco Ravanelli</h3>
+                        <p>Concordia University, Université de Montréal, Mila Quebec AI Institute</p>
+                    </div>
+                    <div class="person">
+                        <div class="person-photo"></div>
+                        <h3>Natalie Voets</h3>
+                        <p>University of Oxford</p>
+                    </div>
+                    <div class="person">
+                        <div class="person-photo"></div>
+                        <h3>Alexandre Gramfort</h3>
+                        <p>Meta</p>
+                    </div>
+                    <div class="person">
+                        <div class="person-photo"></div>
+                        <h3>SueYeon Chung</h3>
+                        <p>Harvard University</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="organizers" class="section">
+            <div class="container">
+                <h2>Organizers</h2>
+                <p class="organizer-email"><strong>Contact Email:</strong> <a href="mailto:TBA">TBA</a></p>
+                <div class="people-grid">
+                    <div class="person">
+                        <div class="person-photo"></div>
+                        <h3>Mariya Hendriksen</h3>
+                        <p>University of Oxford</p>
+                    </div>
+                    <div class="person">
+                        <div class="person-photo"></div>
+                        <h3>Tasha Kim</h3>
+                        <p>University of Oxford</p>
+                    </div>
+                    <div class="person">
+                        <div class="person-photo"></div>
+                        <h3>Ninon Lizé Masclef</h3>
+                        <p>Massachusetts Institute of Technology</p>
+                    </div>
+                    <div class="person">
+                        <div class="person-photo"></div>
+                        <h3>Francesco Mantegna</h3>
+                        <p>University of Oxford</p>
+                    </div>
+                    <div class="person">
+                        <div class="person-photo"></div>
+                        <h3>Margaret Henderson</h3>
+                        <p>Carnegie Mellon University</p>
+                    </div>
+                    <div class="person">
+                        <div class="person-photo"></div>
+                        <h3>Reinmar Kobler</h3>
+                        <p>Meta</p>
+                    </div>
+                    <div class="person">
+                        <div class="person-photo"></div>
+                        <h3>Philip Torr</h3>
+                        <p>University of Oxford</p>
+                    </div>
+                    <div class="person">
+                        <div class="person-photo"></div>
+                        <h3>Oiwi Parker Jones</h3>
+                        <p>University of Oxford</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cfp" class="section">
+            <div class="container">
+                <h2>Call For Papers</h2>
+                <p>
+                    We invite researchers at the intersection of machine learning, neuroscience, and related fields to
+                    submit their recent work on neural representations for BCIs. Accepted papers will be presented
+                    as spotlight talks and posters during the workshop.
+                </p>
+
+                <h3>Topics of Interest</h3>
+                <p>Topics of interest include, but are not limited to:</p>
+                <ul>
+                    <li><strong>Time-frequency-phase representations</strong> for EEG/MEG/ECoG</li>
+                    <li><strong>Spatial architectures</strong> for multi-channel signals: CNNs, graph neural networks, or attention mechanisms</li>
+                    <li><strong>Cross-spectral features</strong> (Riemannian geometry on covariance matrices)</li>
+                    <li><strong>Learned vs. engineered features</strong> for neural decoding: identifying when each approach excels and why</li>
+                    <li><strong>Foundation models</strong> and multi-task representations across speech/motor BCIs</li>
+                    <li><strong>Universal vs. task-specific neural representations:</strong> can one representation serve all BCI applications?</li>
+                </ul>
+
+                <h3>Submission Types</h3>
+                <ul>
+                    <li><strong>Full Papers:</strong> 4-9 pages (excluding references and appendices), with one additional page permitted upon acceptance. All submissions must use the ICML 2026 LaTeX style.</li>
+                    <li><strong>Short Papers:</strong> Limited to 4 pages at submission time. Accepted short papers have an extra page for the camera-ready version.</li>
+                </ul>
+
+                <h3>Important Dates</h3>
+                <ul>
+                    <li><strong>Submission deadline (both tracks):</strong> 30 January 2026, AoE</li>
+                    <li><strong>Reviewer Assignment:</strong> 3 February 2026</li>
+                    <li><strong>Review Period:</strong> 3 February 2026 to 24 February 2026</li>
+                    <li><strong>Acceptance Notification:</strong> 1 March 2026</li>
+                    <li><strong>Camera-ready deadline:</strong> 8 April 2026, AoE</li>
+                </ul>
+
+                <p>
+                    Accepted papers will be presented during poster sessions, with exceptional submissions selected for spotlight oral presentations.
+                    All accepted papers will be made publicly available as non-archival reports, allowing for future submissions to archival conferences or journals.
+                </p>
+
+                <p><strong>Please submit your papers to the <a href="#" target="_blank">OpenReview</a> site.</strong></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Data Representations for Neural Decoding Workshop. Part of ICML 2026.</p>
+        </div>
+    </footer>
+</body>
+</html>
