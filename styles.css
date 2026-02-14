@@ -22,6 +22,22 @@ body {
     padding: 0 20px;
 }
 
+/* Banner */
+.banner {
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+    max-height: 42vh;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    object-position: center top;
+}
+
 /* Header and Navigation */
 header {
     background-color: #fff;
@@ -241,9 +257,17 @@ td em {
     align-items: center;
     justify-content: center;
     position: relative;
+    overflow: hidden;
 }
 
-.person-photo::after {
+.person-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.person-photo-placeholder::after {
     content: '';
     width: 60px;
     height: 60px;
@@ -263,6 +287,48 @@ td em {
     font-size: 1rem;
     color: #666;
     margin: 0;
+}
+
+.speaker-links {
+    font-size: 0.85rem;
+    color: #666;
+    margin: 0.5rem 0 !important;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.speaker-links a {
+    color: #0066cc;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.speaker-links a:hover {
+    color: #004499;
+}
+
+.speaker-links svg {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.link-separator {
+    color: #999;
+    margin: 0 0.25rem;
+}
+
+.speaker-bio {
+    font-size: 0.7rem;
+    color: #555;
+    margin-top: 0.75rem !important;
+    line-height: 1.5;
+    text-align: left;
+    font-style: normal;
 }
 
 .organizer-email {

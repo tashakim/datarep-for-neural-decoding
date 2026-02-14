@@ -3,29 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Representations for Neural Decoding - ICML 2026 Workshop</title>
+    <title>Neural Representations for Brain Data - ICML 2026 Workshop</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
             <div class="nav-container">
-                <h1 class="logo">Data Representations for Neural Decoding</h1>
+                <h1 class="logo">Neural Representations for Brain Data</h1>
                 <ul class="nav-links">
                     <li><a href="#schedule">Schedule</a></li>
                     <li><a href="#speakers">Speakers</a></li>
-                    <li><a href="#organizers">Organizers</a></li>
                     <li><a href="#cfp">Call for Papers</a></li>
+                    <li><a href="#organizers">Organizers</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
+    <div class="banner">
+        <img src="assets/cover-1.png" alt="Workshop Banner">
+    </div>
+
     <main>
         <section class="hero">
             <div class="container">
                 <h1>ICML 2026 WORKSHOP</h1>
-                <h2>Data Representations for Neural Decoding</h2>
+                <h2>Neural Representations for Brain Data</h2>
                 <p class="date-location">Date: TBA<br>Location: TBA</p>
             </div>
         </section>
@@ -33,26 +37,13 @@
         <section class="intro-section">
             <div class="container">
                 <p>
-                    Brain-computer interfaces (BCIs) are advancing rapidly: invasive methods demonstrate strong
-                    performance using established representations, while non-invasive approaches (EEG/MEG) are
-                    maturing to systematic benchmarks. Yet non-invasive BCIs lack consensus on optimal
-                    input representations—a critical bottleneck as the field moves from feasibility to optimization.
+                    Brain–computer interfaces (BCIs) are advancing rapidly: while invasive systems already benefit from well-established neural representations, non-invasive modalities (e.g., EEG/MEG) are reaching the scale needed for systematic benchmarking. Yet the field still lacks consensus on how brain signals should be represented for machine learning, representing a core limitation for generalization, robustness, and data efficiency.
                 </p>
                 <p>
-                    Unlike mature domains like automatic speech recognition (which has converged on mel spectrograms), 
-                    BCIs lack consensus on input representations. Many neuroscience studies still default
-                    to raw or minimally-processed signals, despite brain data being inherently high-dimensional,
-                    noisy, and sparse.
+                    Unlike speech or vision, which converged on standardized inputs such as mel spectrograms, BCI research remains fragmented, often defaulting to raw or minimally processed signals despite the complexity and noise of neural data. This workshop focuses on a central question: <strong>What should representation learning and feature engineering look like for brain data in the era of deep learning?</strong>
                 </p>
                 <p>
-                    Hence, this workshop addresses an important question: <strong>What does neural feature engineering
-                    look like for BCIs in the age of representation learning and foundation models?</strong> To answer this
-                    question, we unite ML researchers and neuroscientists to benchmark representations across
-                    modalities (EEG, MEG, ECoG, microelectrode arrays), examine how to effectively integrate
-                    learned and engineered features, and establish best practices for the field. This directly aligns
-                    with ICML's focus on representation learning: tackling how to represent brain signals for
-                    downstream ML tasks, parallel to how the field developed optimal representations for vision
-                    and language.
+                    We invite ML researchers, neuroscientists, and BCI practitioners to benchmark representations across modalities, compare engineered and learned features, and assess whether the field needs universal or task-specific encodings. By extracting the principles that govern effective neural representations, the workshop aims to build a coherent framework for modeling brain signals, directly aligned with ICML's core interest in advancing machine learning. Our long-term goal is to catalyze BCIs' "mel-spectrogram moment": determining whether the field can converge on shared representations or requires task-specific schemes. By creating shared evaluation infrastructure and design principles, the workshop aims to accelerate progress toward robust, generalizable, and deployable brain-AI systems.
                 </p>
             </div>
         </section>
@@ -60,10 +51,6 @@
         <section id="schedule" class="section">
             <div class="container">
                 <h2>Tentative Schedule</h2>
-                <p><strong>Date:</strong> TBA</p>
-                <p><strong>Location:</strong> TBA</p>
-                <p><strong>Room Capacity:</strong> TBA</p>
-                
                 <div class="schedule-table">
                     <table>
                         <thead>
@@ -74,60 +61,60 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>9:00–9:10</td>
-                                <td>Opening Remarks<br><em>BCI landscape and representation challenges</em></td>
+                                <td>09:00–09:10</td>
+                                <td>Opening Remarks</td>
                             </tr>
                             <tr>
-                                <td>9:10–10:00</td>
-                                <td>Invited Talk: Mirco Ravanelli (Concordia University/Mila)<br><em>Raw vs. spectral features for speech—lessons on data efficiency</em></td>
+                                <td>09:10–10:00</td>
+                                <td>Invited Talk 1: Mirco Ravanelli (Concordia University/Mila)</td>
                             </tr>
                             <tr>
                                 <td>10:00–10:50</td>
-                                <td>Invited Talk: Alexandre Gramfort (Meta Reality Labs)<br><em>Cross-spectral (Riemannian) features from Meta's EMG neural band</em></td>
+                                <td>Invited Talk 2: Alexandre Gramfort (Meta Reality Labs)</td>
                             </tr>
                             <tr>
                                 <td>10:50–11:10</td>
-                                <td>Break & Networking</td>
+                                <td>Coffee Break & Networking</td>
                             </tr>
                             <tr>
                                 <td>11:10–12:00</td>
-                                <td>Invited Talk: Natalie Voets (University of Oxford)<br><em>Neuroanatomical priors for speech decoding</em></td>
+                                <td>Invited Talk 3: Natalie Voets (University of Oxford)</td>
                             </tr>
                             <tr>
                                 <td>12:00–12:30</td>
-                                <td>Spotlight Session 1<br><em>3 papers × 10 minutes (engineered features theme)</em></td>
+                                <td>Oral Session 1: Selected papers (10 min each)</td>
                             </tr>
                             <tr>
                                 <td>12:30–13:00</td>
-                                <td>Morning Panel Q&A<br><em>Ravanelli, Gramfort, Voets + spotlight presenters</em></td>
+                                <td>Morning Panel with Ravanelli, Gramfort, Voets, spotlight presenters</td>
                             </tr>
                             <tr>
                                 <td>13:00–14:00</td>
-                                <td>Lunch + Poster Session<br><em>20-25 posters (remain up all day for viewing during breaks)</em></td>
+                                <td>Lunch, Poster, and BCI Demo & Neural Art Sessions</td>
                             </tr>
                             <tr>
                                 <td>14:00–14:50</td>
-                                <td>Invited Talk: [TBA]<br><em>Foundation models for neural decoding</em></td>
+                                <td>Invited Talk 4: SueYeon Chung (Harvard University)</td>
                             </tr>
                             <tr>
                                 <td>14:50–15:40</td>
-                                <td>Invited Talk: [TBA]<br><em>Contrastive learning for BCIs</em></td>
+                                <td>Invited Talk 5: Juan Helen Zhou (National University of Singapore)</td>
                             </tr>
                             <tr>
                                 <td>15:40–16:00</td>
-                                <td>Break & Networking</td>
+                                <td>Afternoon Coffee Break & Networking</td>
                             </tr>
                             <tr>
                                 <td>16:00–16:30</td>
-                                <td>Spotlight Session 2<br><em>3 papers × 10 minutes (learned representations theme)</em></td>
+                                <td>Oral Session 2: Selected papers (10 min each)</td>
                             </tr>
                             <tr>
                                 <td>16:30–17:15</td>
-                                <td>Panel Discussion<br><em>All speakers + spotlight presenters on representation challenges and future directions</em></td>
+                                <td>Panel Discussion with all speakers</td>
                             </tr>
                             <tr>
                                 <td>17:15+</td>
-                                <td>Workshop social</td>
+                                <td>Workshop Social</td>
                             </tr>
                         </tbody>
                     </table>
@@ -137,76 +124,49 @@
 
         <section id="speakers" class="section">
             <div class="container">
-                <h2>Speakers</h2>
+                <h2>Invited Speakers</h2>
                 <div class="people-grid">
                     <div class="person">
-                        <div class="person-photo"></div>
+                        <div class="person-photo">
+                            <img src="assets/mirco.jpg" alt="Mirco Ravanelli">
+                        </div>
                         <h3>Mirco Ravanelli</h3>
                         <p>Concordia University, Université de Montréal, Mila Quebec AI Institute</p>
                     </div>
                     <div class="person">
-                        <div class="person-photo"></div>
+                        <div class="person-photo">
+                            <img src="assets/natalie.webp" alt="Natalie Voets">
+                        </div>
                         <h3>Natalie Voets</h3>
                         <p>University of Oxford</p>
                     </div>
                     <div class="person">
-                        <div class="person-photo"></div>
+                        <div class="person-photo">
+                            <img src="assets/alexander.jpg" alt="Alexandre Gramfort">
+                        </div>
                         <h3>Alexandre Gramfort</h3>
-                        <p>Meta</p>
+                        <p>Meta Reality Labs</p>
                     </div>
                     <div class="person">
-                        <div class="person-photo"></div>
+                        <div class="person-photo">
+                            <img src="assets/sueyeon.jpg" alt="SueYeon Chung">
+                        </div>
                         <h3>SueYeon Chung</h3>
                         <p>Harvard University</p>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="organizers" class="section">
-            <div class="container">
-                <h2>Organizers</h2>
-                <p class="organizer-email"><strong>Contact Email:</strong> <a href="mailto:TBA">TBA</a></p>
-                <div class="people-grid">
                     <div class="person">
-                        <div class="person-photo"></div>
-                        <h3>Mariya Hendriksen</h3>
-                        <p>University of Oxford</p>
+                        <div class="person-photo">
+                            <img src="assets/helen.jpg" alt="Juan Helen Zhou">
+                        </div>
+                        <h3>Juan Helen Zhou</h3>
+                        <p>National University of Singapore</p>
                     </div>
                     <div class="person">
-                        <div class="person-photo"></div>
-                        <h3>Tasha Kim</h3>
-                        <p>University of Oxford</p>
-                    </div>
-                    <div class="person">
-                        <div class="person-photo"></div>
-                        <h3>Ninon Lizé Masclef</h3>
-                        <p>Massachusetts Institute of Technology</p>
-                    </div>
-                    <div class="person">
-                        <div class="person-photo"></div>
-                        <h3>Francesco Mantegna</h3>
-                        <p>University of Oxford</p>
-                    </div>
-                    <div class="person">
-                        <div class="person-photo"></div>
-                        <h3>Margaret Henderson</h3>
-                        <p>Carnegie Mellon University</p>
-                    </div>
-                    <div class="person">
-                        <div class="person-photo"></div>
-                        <h3>Reinmar Kobler</h3>
-                        <p>Meta</p>
-                    </div>
-                    <div class="person">
-                        <div class="person-photo"></div>
-                        <h3>Philip Torr</h3>
-                        <p>University of Oxford</p>
-                    </div>
-                    <div class="person">
-                        <div class="person-photo"></div>
-                        <h3>Oiwi Parker Jones</h3>
-                        <p>University of Oxford</p>
+                        <div class="person-photo">
+                            <img src="assets/yukiyasu.webp" alt="Yukiyasu Kamitani">
+                        </div>
+                        <h3>Yukiyasu Kamitani</h3>
+                        <p>Kyoto University, ATR Computational Neuroscience Laboratories</p>
                     </div>
                 </div>
             </div>
@@ -233,10 +193,16 @@
                 </ul>
 
                 <h3>Submission Types</h3>
+                <p>We offer two submission tracks:</p>
                 <ul>
-                    <li><strong>Full Papers:</strong> 4-9 pages (excluding references and appendices), with one additional page permitted upon acceptance. All submissions must use the ICML 2026 LaTeX style.</li>
-                    <li><strong>Short Papers:</strong> Limited to 4 pages at submission time. Accepted short papers have an extra page for the camera-ready version.</li>
+                    <li><strong>Full Papers:</strong> 4–8 pages (excluding references and appendices). All submissions must use the ICML 2026 LaTeX style.</li>
+                    <li><strong>Short Papers:</strong> Up to 4 pages (excluding references and appendices). All submissions must use the ICML 2026 LaTeX style.</li>
                 </ul>
+
+                <h3>Reviewing Process</h3>
+                <p>
+                    All submissions will undergo double-blind review on OpenReview, with at least two reviewers per submission. Program chairs will manage conflicts of interest to ensure fairness. Papers will be selected for oral or poster presentation based on overall quality and potential to stimulate discussion. Accepted papers will appear publicly on OpenReview beforehand.
+                </p>
 
                 <h3>Important Dates</h3>
                 <ul>
@@ -253,13 +219,88 @@
                 </p>
 
                 <p><strong>Please submit your papers to the <a href="#" target="_blank">OpenReview</a> site.</strong></p>
+                <p>Further details, the full call for papers and a preview Demos & Neural Art gallery will be available on the workshop website</a>.</p>
+            </div>
+        </section>
+
+        <section id="demos" class="section">
+            <div class="container">
+                <h2>Demos & Neural Art Track</h2>
+                <p>
+                    In addition to research presentations, we introduce a Demos & Neural Art track connecting neural representations with generative models driven directly by brain activity. This track features systems from both academia and industry, including Prof. Yukiyasu Kamitani on visual imagery decoding, the OBVIOUS collective (IMAGINE mind-to-image series), and Blackrock Neurotech's brain-controlled art and music.
+                </p>
+            </div>
+        </section>
+
+        <section id="organizers" class="section">
+            <div class="container">
+                <h2>Organizers</h2>
+                <p class="organizer-email"><strong>Contact Email:</strong> <a href="mailto:TBA">TBA</a></p>
+                <div class="people-grid">
+                    <div class="person">
+                        <div class="person-photo">
+                            <img src="assets/mariya.png" alt="Mariya Hendriksen">
+                        </div>
+                        <h3>Mariya Hendriksen</h3>
+                        <p>University of Oxford</p>
+                    </div>
+                    <div class="person">
+                        <div class="person-photo">
+                            <img src="assets/tasha.png" alt="Tasha Kim">
+                        </div>
+                        <h3>Tasha Kim</h3>
+                        <p>University of Oxford</p>
+                    </div>
+                    <div class="person">
+                        <div class="person-photo">
+                            <img src="assets/ninon.png" alt="Ninon Lizé Masclef">
+                        </div>
+                        <h3>Ninon Lizé Masclef</h3>
+                        <p>Massachusetts Institute of Technology</p>
+                    </div>
+                    <div class="person">
+                        <div class="person-photo">
+                            <img src="assets/teyun.png" alt="Teyun Kwon">
+                        </div>
+                        <h3>Teyun Kwon</h3>
+                        <p>University of Oxford</p>
+                    </div>
+                    <div class="person">
+                        <div class="person-photo">
+                            <img src="assets/francesco.png" alt="Francesco Mantegna" onerror="this.style.display='none'; this.parentElement.classList.add('person-photo-placeholder');">
+                        </div>
+                        <h3>Francesco Mantegna</h3>
+                        <p>University of Oxford</p>
+                    </div>
+                    <div class="person">
+                        <div class="person-photo">
+                            <img src="assets/margaret.png" alt="Margaret Henderson">
+                        </div>
+                        <h3>Margaret Henderson</h3>
+                        <p>Carnegie Mellon University</p>
+                    </div>
+                    <div class="person">
+                        <div class="person-photo">
+                            <img src="assets/philip.png" alt="Philip Torr">
+                        </div>
+                        <h3>Philip Torr</h3>
+                        <p>University of Oxford</p>
+                    </div>
+                    <div class="person">
+                        <div class="person-photo">
+                            <img src="assets/oiwi.png" alt="Oiwi Parker Jones">
+                        </div>
+                        <h3>Oiwi Parker Jones</h3>
+                        <p>University of Oxford</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 Data Representations for Neural Decoding Workshop. Part of ICML 2026.</p>
+            <p>&copy; 2026 Neural Representations for Brain Data Workshop. Part of ICML 2026.</p>
         </div>
     </footer>
 </body>
